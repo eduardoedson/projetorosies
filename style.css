@@ -1,0 +1,518 @@
+/*
+Theme Name: Rosies
+Text Domain: Rosies
+Version: 1.0
+Description: Theme to Rosies Project
+Author: Eduardo Edson Batista Cordeiro Alves
+Author URI: https://eduardoedson.github.io/
+*/
+
+:root {
+    --cor_1: #EED9C4;
+    --cor_2: #712F26;
+    --cor_3: #B695C2;
+    --cor_4: #FBE4DC;
+    --cor_5: #070607;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: var(--cor_1);
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.page-content {
+    min-height: 100vh;
+    margin-top: 25px;
+    color: var(--cor_2);
+}
+
+.post {
+    padding: 0 150px;
+}
+
+.navbar {
+    background-color: var(--cor_3);
+}
+
+.navbar-light .navbar-nav a,
+.navbar-light .navbar-nav .nav-link {
+    font-size: 1.1em;
+    color: var(--cor_2);
+    text-decoration: none;
+}
+
+.navbar-light .navbar-nav a:hover,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--cor_2);
+    cursor: pointer;
+}
+
+#navbarToggler .social a i {
+    font-size: 1.2em;
+}
+
+#mapa {
+    height: 680px;
+}
+
+.menu_central {
+    max-width: 95% !important;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 5px;
+    background-color: var(--cor_3);
+    border-radius: 15px;
+}
+
+.menu_central-item {
+    margin-bottom: 15px;
+    list-style: none;
+    text-align: left;
+}
+
+.menu_central-subitem {
+    margin-top: 8px;
+    list-style: none;
+    text-align: left;
+}
+
+.menu_central-item a {
+    color: var(--cor_2);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu_central-item a:hover {
+    cursor: pointer;
+    color: var(--cor_5);
+}
+
+.sub-menu li {
+    list-style: none;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    text-align: left;
+    z-index: 1;
+    background-color: var(--cor_3);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.menu_central-item:hover .sub-menu {
+    display: block;
+}
+
+.conceitos {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+#tabela-conceitos {
+    background-image: url('/wp-content/themes/Rosies/assets/images/mulher.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.tabela-conceito-item {
+    padding: 10px;
+    border: solid 1px #B695C2;
+    background-color: rgba(182, 149, 194, 0.09);
+    border-radius: 10px;
+    /* box-shadow: 0 8px 6px -6px black; */
+    margin: 10px 0;
+}
+
+.conceitos span {
+    color: var(--cor_2);
+    text-align: justify;
+}
+
+.central_lateral ul li {
+    text-align: left;
+    font-size: 20px;
+}
+
+.footer {
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    padding: 4px 25px;
+    background-color: var(--cor_3);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer span {
+    font-size: 15px;
+    color: var(--cor_2);
+    font-weight: bold;
+}
+
+.footer span a {
+    text-decoration: none;
+    color: var(--cor_2);
+}
+
+.footer span a:hover {
+    color: var(--cor_2);
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-social li a i {
+    font-size: 1.2em;
+    color: var(--cor_2);
+}
+
+.footer-social li a i:hover {
+    color: var(--cor_2);
+}
+
+.page-content .row .col span {
+    text-align: justify;
+    color: var(--cor_2);
+}
+
+.modal-dialog {
+    border-radius: 8px;
+    padding: 3px;
+}
+
+.modal-header {
+    background-color: var(--cor_3);
+    color: var(--cor_2);
+    font-weight: bold;
+}
+
+.modal-body {
+    background-color: var(--cor_1);
+    color: var(--cor_2);
+    text-align: justify;
+}
+
+.card {
+    padding: 10px;
+    margin-bottom: 30px;
+    background-color: var(--cor_3);
+    /* height: 120px; */
+}
+
+.card img {
+    align-self: center;
+    width: 250px;
+    height: 250px;
+}
+
+.card-body a {
+    font-size: 18px;
+    font-weight: bold;
+    float: right;
+    text-decoration: none;
+    color: var(--cor_2);
+}
+
+.card-body a:hover {
+    opacity: 0.6;
+}
+
+.card-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--cor_2);
+    text-transform: uppercase;
+}
+
+.card-text {
+    font-size: 14px;
+    color: var(--cor_2);
+}
+
+.titulo-categorias {
+    font-weight: bold;
+    color: var(--cor_2);
+    font-family: '/wp-content/themes/Rosies/assets/fonts/Rumble Brave.otf';
+    font-size: 50px;
+}
+
+.categoria-empty {
+    font-size: 25px;
+    color: var(--cor_2);
+}
+
+.titulo-post {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--cor_2);
+    font-family: '/wp-content/themes/Rosies/assets/fonts/Rumble Brave.otf';
+}
+
+.content-post {
+    text-align: justify;
+    color: var(--cor_2);
+    /* margin: 0 150px; */
+}
+
+.comentarios {
+    color: var(--cor_2);
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--cor_1);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.comment-meta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.comment-author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.comment-author a,
+.comment-author b {
+    text-decoration: none;
+    color: var(--cor_2);
+    cursor: unset;
+}
+
+.comment-metadata a {
+    text-decoration: none;
+    color: var(--cor_2);
+    cursor: unset;
+}
+
+.comment-edit-link {
+    color: #B695C2 !important;
+    text-decoration: underline !important;
+    cursor: pointer !important;
+}
+
+.comment-content {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.submit {
+    background-color: var(--cor_3);
+    color: var(--cor_2);
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    opacity: 0.8;
+    box-shadow: 0 8px 6px -6px black;
+    font-family: '/wp-content/themes/Rosies/assets/fonts/Rumble Brave.otf';
+    border: none;
+}
+
+.submit:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#btnTopo {
+    position: fixed;
+    display: none;
+    width: 50px;
+    height: 50px;
+    bottom: 60px;
+    right: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--cor_3);
+    color: var(--cor_2);
+}
+
+#btnTopo:hover,
+.btn-contato:hover {
+    opacity: 0.6 !important;
+}
+
+.btn-contato {
+    background-color: var(--cor_3) !important;
+    border: none !important;
+    color: var(--cor_1) !important;
+    padding: 5px 17px !important;
+    border-radius: 8px !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    font-size: 16px !important;
+}
+
+.wpforms-field-label {
+    font-size: 19px !important;
+    color: var(--cor_2) !important;
+    font-weight: bold !important;
+}
+
+.wpforms-field-sublabel {
+    color: var(--cor_2) !important;
+}
+
+.wpforms-required-label {
+    color: red !important;
+}
+
+.wpforms-field-medium,
+.wpforms-field-name-last,
+.wpforms-field-required {
+    border-radius: 8px !important;
+}
+
+.wpforms-field-name-first,
+.wpforms-field-required {
+    border: 2px solid var(--cor_2) !important;
+}
+
+.fa-info-circle {
+    cursor: pointer;
+}
+
+.popup-img {
+    width: 150px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+}
+
+.popup-nome {
+    font-size: 20px;
+    font-family: '/wp-content/themes/Rosies/assets/fonts/Rumble Brave.otf';
+    font-weight: bold;
+    color: var(--cor_2) !important;
+}
+
+.div-popup {
+    background-color: var(--cor_1) !important;
+    border-radius: 8px !important;
+    text-align: center;
+}
+
+.leaflet-tooltip-top:before {
+    display: none !important;
+}
+
+.full-img img {
+    width: 100%;
+    height: auto;
+}
+
+.saboxplugin-wrap {
+    border: 3px solid var(--cor_3) !important;
+}
+
+.saboxplugin-socials {
+    border: 1px solid var(--cor_3) !important;
+    background-color: var(--cor_3) !important;
+}
+
+.saboxplugin-socials a {
+    color: var(--cor_1) !important;
+}
+
+.saboxplugin-gravatar a img {
+    /* height: 100px !important;
+  width: 100px !important;
+  border-radius: 50% !important; */
+    border: 1px solid var(--cor_3) !important;
+}
+
+.saboxplugin-gravatar a {
+    cursor: unset !important;
+}
+
+.saboxplugin-authorname a {
+    cursor: unset !important;
+    font-weight: bold !important;
+    color: var(--cor_3) !important;
+}
+
+
+/* .wppsac-post-slider.design-2 .wppsac-post-content-left {
+  display: none !important;
+} */
+
+.wppsac-post-slider.design-2 .wppsac-post-content-left {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.wppsac-post-title {
+    display: none;
+}
+
+hr {
+    color: var(--cor_3);
+}
+
+
+/* .btn-carta-introdutoria {
+    background-color: var(--cor_3);
+    color: var(--cor_2);
+    font-weight: bold;
+    border-radius: 8px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    opacity: 1;
+    box-shadow: 0 8px 6px -6px black;
+    font-family: '/wp-content/themes/Rosies/assets/fonts/Rumble Brave.otf';
+    border: none;
+}
+
+.btn-carta-introdutoria:hover {
+    opacity: 0.9;
+    cursor: pointer;
+} */
+
+.btn-carta-introdutoria {
+    position: fixed;
+    display: block;
+    width: 50px;
+    height: 50px;
+    bottom: 60px;
+    left: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--cor_3);
+    color: var(--cor_2);
+}
+
+.btn-carta-introdutoria:hover {
+    opacity: 0.6 !important;
+}
